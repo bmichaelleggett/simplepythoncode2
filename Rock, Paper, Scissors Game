@@ -1,0 +1,34 @@
+import random
+
+
+user = raw_input("What do you choose laddy?")
+comp = random.choice(["rock","paper","scissors"])
+
+
+
+print "You chose", user
+print "The computer chose", comp
+
+if comp == "rock":
+  if user == "rock":
+    print "It's a Tie my Brotha"
+  elif user == "paper":
+    print "You win this time, next time not so much."
+  elif user == "scissors":
+    print "Hell yeah, suck on them!"
+    
+if comp == "paper":
+  if user == "rock":
+    print "I win again! Trust me, there's more where that came from."
+  elif user == "paper":
+    print "Why anotha tie?!"
+  elif user == "scissors":
+    print "You may have won the battle, but you definitely ain't winning the war."
+    
+if comp == "scissors":
+  if user == "rock":
+    print "dangit! another win for you."
+  elif user == "paper":
+    print "Hahaaaah!!! It's my time to shine! #Yeppur!"
+  elif user == "scissors":
+    print "Anotha tie."
