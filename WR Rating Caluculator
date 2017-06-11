@@ -1,0 +1,30 @@
+#6/03/2017
+#the greatest rating a WR can have is 123.75
+
+getReceptions = input("What is the total amount of receptions they had for the year?")
+receptionRating =  int(getReceptions) * .0323      #Gets the rating of the WR by their receptions total
+
+getYards = input("What is the total amount of yards they had for the season?")
+yardRating = int(getYards) * .0023     #gets the rating of the receiver by their yards total
+
+getYAC = input("What is the total amount of Yards After The Catch that they had for the season?")
+YACRating = int(getYAC) * .00523
+
+yarddash = input("What is their 40 yard dash time?")
+fieldSpeed = float(yarddash) * 2.5 #tracks their speed total for a 100 yard field
+
+
+
+if receptionRating > 3.75:
+    receptionRating = 3.75
+if   yardRating > 3.75:
+    yardRating = 3.75
+if YACRating > 3.75:
+    YACRating = 3.75
+
+
+print (((receptionRating + yardRating + YACRating)*11) - fieldSpeed)
+print receptionRating, "Reception Ratiing"
+print yardRating, "Yards Rating"
+print YACRating, "YACRating"
+print fieldSpeed, "Field Speed"
