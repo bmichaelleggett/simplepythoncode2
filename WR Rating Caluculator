@@ -16,11 +16,11 @@ fieldSpeed = float(yarddash) * 2.5 #tracks their speed total for a 100 yard fiel
 
 
 if receptionRating > 3.75:
-    receptionRating = 3.75
+    receptionRating = 3.75    #Sets a Limit to the amount of points the Receiver can get for their Receptions to 3.75
 if   yardRating > 3.75:
-    yardRating = 3.75
+    yardRating = 3.75           #Sets a Limit to the amount of points the Receiver can get for their Total Yards to 3.75
 if YACRating > 3.75:
-    YACRating = 3.75
+    YACRating = 3.75                #Sets a Limit to the amount of points the Receiver can get for their Total Yards After Catch to 3.75
 
 
 print (((receptionRating + yardRating + YACRating)*11) - fieldSpeed)
