@@ -8,10 +8,10 @@ getYards = input("What is the total amount of yards they had for the season?")
 yardRating = int(getYards) * .0023     #gets the rating of the receiver by their yards total
 
 getYAC = input("What is the total amount of Yards After The Catch that they had for the season?")
-YACRating = int(getYAC) * .00523
+YACRating = int(getYAC) * .00523        #get the rating of the receiver by their yards after the catch total
 
 yarddash = input("What is their 40 yard dash time?")
-fieldSpeed = float(yarddash) * 2.5 #tracks their speed total for a 100 yard field
+fieldSpeed = float(yarddash) * 2.5 #tracks their estimated speed for a 100 yard field
 
 
 
